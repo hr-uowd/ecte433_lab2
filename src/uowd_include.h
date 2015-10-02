@@ -94,7 +94,7 @@ void SystemClock_Config(void)
 
 void uowd_init(){
 	HAL_Init();
-		SystemClock_Config();
+	SystemClock_Config();
 
 
 }

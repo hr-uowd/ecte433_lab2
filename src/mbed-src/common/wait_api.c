@@ -17,12 +17,13 @@
 #include "us_ticker_api.h"
 
 void wait(float s) {
-    wait_us(s * 1000000.0f);
+    //wait_us(s * 1000000.0f);
+	wait_ms(s * 1000);
 }
 
 void wait_ms(int ms) {
-    wait_us(ms * 1000);
-
+    //wait_us(ms * 1000);
+	HAL_Delay(ms);
 }
 
 void wait_us(int us) {
