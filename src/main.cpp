@@ -23,9 +23,6 @@ int main( ){
 	DigitalIn myswitch(PI_11);
 	Serial computer(STDIO_UART_TX,STDIO_UART_RX);
 
-	//LCD_Config();
-	//BSP_LCD_Clear(LCD_COLOR_BLUE);
-
 	BSP_TS_Init(BSP_LCD_GetXSize(), BSP_LCD_GetYSize());
 
 	uint8_t no_of_touches;
