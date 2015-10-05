@@ -28,6 +28,7 @@ int main( ){
 	uint8_t no_of_touches;
 
 	while(1){
+		BSP_TS_GetState(&TS_State);
 		no_of_touches = TS_State.touchDetected;
 		if(TS_State.touchDetected){
 		computer.printf("the number of touches : %d\n\r", no_of_touches);
